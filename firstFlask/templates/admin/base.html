@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../../static/css/oldsnow.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="navbar navbar-default">
+
+        <div class="navbar-header">
+            <div class="navbar-brand">电信公司排班系统</div>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="">本轮排班表</a></li>
+            <li><a href="">手动排班管理</a></li>
+            <li><a href="">人员添加</a></li>
+            <li><a href="">公告公示管理</a></li>
+            <li><a href="">人员外出管理</a></li>
+        </ul>
+        <ul class="nav navbar-nav pull-right">
+             <li><a href="{{ url_for('webadmin.login') }}">登录</a></li>
+             <li><a href="{{ url_for('webadmin.reg') }}">注册</a></li>
+        </ul>
+    </div>
+    {% block content %}
+    {% endblock %}
+</div>
+
+
+</body>
+</html>
